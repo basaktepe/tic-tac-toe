@@ -7,6 +7,7 @@ const gameData = [
 let editedPLayer = 0;
 let activePlayer = 0;
 let currentRound = 1;
+let gameIsOver = false;
 
 const players = [
   {
@@ -19,7 +20,7 @@ const players = [
   },
 ];
 
-const gameBoardElement = document.getElementById("#game-board");
+const gameBoardElement = document.getElementById("game-board");
 const playerConfigOverlayElement = document.getElementById("config-overlay");
 const backdropElement = document.getElementById("backdrop");
 const playerConfigFormElement = document.querySelector("form");
